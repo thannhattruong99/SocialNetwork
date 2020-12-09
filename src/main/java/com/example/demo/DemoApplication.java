@@ -5,6 +5,7 @@ import com.example.service.AccountService;
 import com.form.AccountForm;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.Authorization;
+import org.apache.catalina.filters.RemoteIpFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,6 +16,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.view.RedirectView;
 
 import javax.validation.Valid;
 import java.io.IOException;
@@ -70,7 +72,13 @@ public class DemoApplication {
         return accountService.getStudentAll();
     }
 
-    @ApiOperation(value = "", authorizations = { @Authorization(value="jwtToken") })
+    @GetMapping("")
+    public RedirectView init(){
+
+        return new RedirectView("http://localhost:8080/swagger-ui/index.html?configUrl=/api-docs/swagger-config");
+    }
+
+//    @ApiOperation(value = "", authorizations = { @Authorization(value="jwtToken") })
     @RequestMapping(value = "/createAnAccount", method = RequestMethod.POST)
     public String createAnAccount(Model model, //
                                   @ModelAttribute("account") @Valid AccountForm account, //
