@@ -2,10 +2,7 @@ package com.example.demo;
 
 import com.example.pojo.Account;
 import com.example.service.AccountService;
-import com.form.AccountForm;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.Authorization;
-import org.apache.catalina.filters.RemoteIpFilter;
+import com.example.form.AccountForm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -37,44 +34,15 @@ public class DemoApplication {
 
     public static void main(String[] args) throws IOException {
         SpringApplication.run(DemoApplication.class, args);
-//        Reader reader = Resources.getResourceAsReader("SqlMapConfig.xml");
-//        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
-//        SqlSession session = sqlSessionFactory.openSession();
-//
-////         create student mapper
-////        AccountMapper studentMapper = session.getMapper(AccountMapper.class);
-//
-//        ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
-//
-////        ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
-//        DBHelper dbHelper = (DBHelper) context.getBean("SqlConnectionDB");
-////        SqlSession session = dbHelper.makeConnection().openSession();
-//        // show list student
-//        List<Account> listAccounts = session.selectList("com.mapper.sql.AccountDAO.selectAll");
-//        for (Account account : listAccounts) {
-//            System.out.println(account.toString());
-//        }
-//
-//        // close session
-//        session.close();
     }
 
     @GetMapping("/getStudentAll")
     public List<Account> sayHello() {
-
-
-//        AccountDAO accountDAO = new AccountDAO(idbHelper);
-//        List<Account> listAccounts2 = accountDAO.getAll();
-//        for (Account account : listAccounts2) {
-//            System.out.println(account.toString());
-//        }
-
         return accountService.getStudentAll();
     }
 
     @GetMapping("")
     public RedirectView init(){
-
         return new RedirectView("http://localhost:8080/swagger-ui/index.html?configUrl=/api-docs/swagger-config");
     }
 

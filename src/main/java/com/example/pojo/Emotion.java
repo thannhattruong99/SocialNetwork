@@ -2,13 +2,12 @@ package com.example.pojo;
 
 import java.util.Date;
 
-public class Emotion extends EmotionKey {
+public class Emotion {
     private Integer status;
 
     private Date emotiondate;
 
     public Emotion(Integer articleid, String email, Integer status, Date emotiondate) {
-        super(articleid, email);
         this.status = status;
         this.emotiondate = emotiondate;
     }

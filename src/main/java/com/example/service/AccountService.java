@@ -19,12 +19,7 @@ public class AccountService {
     AccountDAO accountDAO;
 
     public List<Account> getStudentAll(){
-//        AccountDAO accountDAO = new AccountDAO();
         List<Account> listAccounts2 = accountDAO.getAll();
-//        for (Account account : listAccounts2) {
-//            System.out.println(account.toString());
-//        }
-
         return listAccounts2;
     }
 
