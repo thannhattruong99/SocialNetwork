@@ -1,4 +1,4 @@
-package com.example.pojo;
+package com.common.dto;
 
 public class Account {
     private String email;
