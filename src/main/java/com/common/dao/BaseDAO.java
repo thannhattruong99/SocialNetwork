@@ -1,4 +1,4 @@
-package com.mapper.sql;
+package com.common.dao;
 
 import com.util.IDBHelper;
 import org.apache.ibatis.session.SqlSession;
