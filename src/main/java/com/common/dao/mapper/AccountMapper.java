@@ -14,7 +14,7 @@ public class AccountDAO extends BaseDAO {
     }
 
     public List<Account> getAll(){
-        List<Account> listAccounts = sqlSession.selectList("com.common.dao.mapper.AccountDAO.selectAll");
+        List<Account> listAccounts = sqlSession.selectList("com.common.dao.sql.AccountDAO.selectAll");
         return listAccounts;
     }
 }
