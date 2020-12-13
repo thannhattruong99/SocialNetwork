@@ -22,7 +22,7 @@ import java.util.List;
 @Configuration
 @SpringBootApplication
 @RestController
-@ComponentScan(basePackages = {"com.util", "com.example", "com.common.dao.sql"})
+@ComponentScan(basePackages = {"com.util", "com.example", "com.common.dao"})
 public class DemoApplication {
 
     public static void main(String[] args) throws IOException {

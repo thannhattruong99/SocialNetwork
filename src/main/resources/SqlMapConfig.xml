@@ -24,6 +24,6 @@
         <property name="mysql" value="mysql" />
     </databaseIdProvider>
     <mappers>
-        <mapper resource="com/mapper/sql/Account.xml" />
+        <mapper resource="com/common/dao/sql/AccountDAO.xml" />
     </mappers>
 </configuration>

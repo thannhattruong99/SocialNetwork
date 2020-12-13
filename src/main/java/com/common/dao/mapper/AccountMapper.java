@@ -8,8 +8,8 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class AccountDAO extends BaseDAO {
-    public AccountDAO(IDBHelper idbHelper) {
+public class AccountMapper extends BaseDAO {
+    public AccountMapper(IDBHelper idbHelper) {
         super(idbHelper);
     }
 
