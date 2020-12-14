@@ -26,7 +26,7 @@ public class AccountController {
 
     @GetMapping("")
     public RedirectView init(){
-        return new RedirectView("http://localhost:8080/swagger-ui/index.html?configUrl=/api-docs/swagger-config");
+        return new RedirectView("/swagger-ui/index.html?configUrl=/api-docs/swagger-config");
     }
 
     //    @ApiOperation(value = "", authorizations = { @Authorization(value="jwtToken") })
