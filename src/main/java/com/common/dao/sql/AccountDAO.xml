@@ -18,9 +18,9 @@
         SELECT * FROM ACCOUNT;
     </select>
 
-    <select id="selectByEmail" parameterType="String" resultType="Account">
-        SELECT * FROM Account WHERE ID = ${value};
-    </select>
+<!--    <select id="selectByEmail" parameterType="String" resultType="Account">-->
+<!--        SELECT * FROM Account WHERE ID = ${value};-->
+<!--    </select>-->
 
     <resultMap id = "result" type = "Account">
         <result property = "email" column = "email"/>
