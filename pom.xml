@@ -36,11 +36,11 @@
       <artifactId>mybatis</artifactId>  
       <version>3.5.6</version> 
     </dependency>  
-    <!--mysql jdbc driver-->  
+    <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->  
     <dependency> 
-      <groupId>mysql</groupId>  
-      <artifactId>mysql-connector-java</artifactId>  
-      <version>8.0.18</version> 
+      <groupId>com.microsoft.sqlserver</groupId>  
+      <artifactId>mssql-jdbc</artifactId>  
+      <version>8.4.1.jre11</version> 
     </dependency>  
     <dependency> 
       <groupId>javax.validation</groupId>  
@@ -109,13 +109,19 @@
           <subscriptionId>93dda634-0186-4238-aea8-c146df85fda0</subscriptionId>  
           <resourceGroup>SocialNetwork-resource</resourceGroup>  
           <appName>SocialNetworkMini</appName>  
-          <pricingTier>D1</pricingTier>  
+          <pricingTier>S1</pricingTier>  
           <region>southeastasia</region>  
           <runtime> 
             <os>Windows</os>  
             <javaVersion>Java 11</javaVersion>  
             <webContainer>Java SE</webContainer> 
           </runtime>  
+          <!--          <appSettings>-->  
+          <!--            <property>-->  
+          <!--              <name>JAVA_OPTS</name>-->  
+          <!--              <value>-Dserver.port=80</value>-->  
+          <!--            </property>-->  
+          <!--          </appSettings>-->  
           <deployment> 
             <resources> 
               <resource> 

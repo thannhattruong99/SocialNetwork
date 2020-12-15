@@ -19,14 +19,14 @@ public class AccountController {
     @Autowired
     AccountService accountService;
 
-    @GetMapping("/getStudentAll")
+    @GetMapping("/getAllAccount")
     public List<Account> sayHello() {
         return accountService.getStudentAll();
     }
 
     @GetMapping("")
     public RedirectView init(){
-        return new RedirectView("/getStudentAll");
+        return new RedirectView("/swagger-ui-custom.html");
     }
 
     //    @ApiOperation(value = "", authorizations = { @Authorization(value="jwtToken") })

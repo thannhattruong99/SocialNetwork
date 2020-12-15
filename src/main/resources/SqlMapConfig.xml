@@ -10,19 +10,13 @@
         <environment id="development">
             <transactionManager type="JDBC" />
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver" />
-                <property name="url" value="jdbc:mysql://localhost:3306/SOCIAL_NETWORK?characterEncoding=utf-8&amp;useSSL=true" />
-                <property name="username" value="root" />
-                <property name="password" value="Dockersql123" />
+                <property name="driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+                <property name="url" value="jdbc:sqlserver://truongtn-db.database.windows.net:1433;database=SocialNetworkDB" />
+                <property name="username" value="truongtn" />
+                <property name="password" value="Admin@1999" />
             </dataSource>
         </environment>
     </environments>
-
-    <databaseIdProvider type="DB_VENDOR">
-        <property name="mysql" value="mysql"/>
-        <property name="mysql" value="mysql"/>
-        <property name="mysql" value="mysql" />
-    </databaseIdProvider>
     <mappers>
         <mapper resource="com/common/dao/sql/AccountDAO.xml" />
     </mappers>
