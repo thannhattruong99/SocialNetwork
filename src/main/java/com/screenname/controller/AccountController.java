@@ -1,8 +1,8 @@
-package com.example.controller;
+package com.screenname.controller;
 
 import com.common.dto.Account;
-import com.example.form.AccountForm;
-import com.example.service.AccountService;
+import com.screenname.form.AccountForm;
+import com.screenname.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;

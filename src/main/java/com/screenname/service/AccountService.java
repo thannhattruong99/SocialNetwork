@@ -1,4 +1,4 @@
-package com.example.service;
+package com.screenname.service;
 
 import com.common.dto.Account;
 import com.common.dao.mapper.AccountMapper;
