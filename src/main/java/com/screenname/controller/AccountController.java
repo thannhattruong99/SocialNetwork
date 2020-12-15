@@ -24,7 +24,7 @@ public class AccountController {
         return accountService.getStudentAll();
     }
 
-    @GetMapping("/getAllAccountDemo5")
+    @GetMapping("/getAllAccountDemo6")
     public List<Account> sayHelloDemo() {
         return accountService.getStudentAll();
     }
