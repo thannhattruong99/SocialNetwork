@@ -105,8 +105,6 @@
         <artifactId>azure-webapp-maven-plugin</artifactId>  
         <version>1.12.0</version>  
         <configuration> 
-          <schemaVersion>v2</schemaVersion>  
-          <subscriptionId>93dda634-0186-4238-aea8-c146df85fda0</subscriptionId>  
           <resourceGroup>SocialNetwork-resource</resourceGroup>  
           <appName>SocialNetworkMini</appName>  
           <pricingTier>S1</pricingTier>  
