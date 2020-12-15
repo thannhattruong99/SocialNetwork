@@ -24,6 +24,11 @@ public class AccountController {
         return accountService.getStudentAll();
     }
 
+    @GetMapping("/getAllAccountDemo")
+    public List<Account> sayHelloDemo() {
+        return accountService.getStudentAll();
+    }
+
     @GetMapping("")
     public RedirectView init(){
         return new RedirectView("/swagger-ui-custom.html");
