@@ -70,12 +70,13 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>ROOT</finalName>
+        <finalName>app</finalName>
         <resources>
             <resource>
                 <directory>src/main/java</directory>
                 <includes>
                     <include>**/*.xml</include>
+                    <include>**/*.config</include>
                 </includes>
             </resource>
         </resources>
