@@ -126,7 +126,7 @@
                 <directory>${project.basedir}/target</directory>  
                 <filtering>false</filtering>  
                 <includes> 
-                  <include>**/*.jar</include>
+                  <include>*.jar</include> 
                 </includes> 
               </resource> 
             </resources> 
