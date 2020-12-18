@@ -68,14 +68,14 @@
       <version>3.0.0</version> 
     </dependency> 
   </dependencies>  
-  <build>
+  <build> 
     <resources> 
       <resource> 
-        <directory>src/main/java</directory>  
+        <directory>src/main/java</directory>
         <includes> 
-          <include>**/*.xml</include> 
+          <include>**/*.xml</include>
         </includes> 
-      </resource> 
+      </resource>
     </resources>  
     <plugins> 
       <plugin> 
@@ -90,7 +90,7 @@
             </goals> 
           </execution> 
         </executions>  
-        <configuration> 
+        <configuration>
           <apiDocsUrl>http://localhost:8080/v3/api-docs</apiDocsUrl>  
           <outputFileName>openapi.json</outputFileName>  
           <outputDir>${project.build.directory}</outputDir> 
@@ -106,22 +106,21 @@
         <version>1.12.0</version>  
         <configuration> 
           <schemaVersion>v2</schemaVersion>  
-          <subscriptionId>93dda634-0186-4238-aea8-c146df85fda0</subscriptionId>  
           <resourceGroup>SocialNetwork-resource</resourceGroup>  
-          <appName>SocialNetworkMini</appName>  
-          <pricingTier>S1</pricingTier>  
+          <appName>SocialNetworkNTF1</appName>  
+          <pricingTier>D1</pricingTier>
           <region>southeastasia</region>  
           <runtime> 
             <os>Windows</os>  
             <javaVersion>Java 11</javaVersion>  
             <webContainer>Java SE</webContainer> 
           </runtime>  
-          <!--          <appSettings>-->  
-          <!--            <property>-->  
-          <!--              <name>JAVA_OPTS</name>-->  
-          <!--              <value>-Dserver.port=80</value>-->  
-          <!--            </property>-->  
-          <!--          </appSettings>-->  
+          <!--          <appSettings>-->
+          <!--            <property>-->
+          <!--              <name>JAVA_OPTS</name>-->
+          <!--              <value>-Dserver.port=80</value>-->
+          <!--            </property>-->
+          <!--          </appSettings>-->
           <deployment> 
             <resources> 
               <resource> 
