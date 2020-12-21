@@ -71,11 +71,11 @@
   <build> 
     <resources> 
       <resource> 
-        <directory>src/main/java</directory>
+        <directory>src/main/java</directory>  
         <includes> 
-          <include>**/*.xml</include>
+          <include>**/*.xml</include> 
         </includes> 
-      </resource>
+      </resource> 
     </resources>  
     <plugins> 
       <plugin> 
@@ -90,7 +90,7 @@
             </goals> 
           </execution> 
         </executions>  
-        <configuration>
+        <configuration> 
           <apiDocsUrl>http://localhost:8080/v3/api-docs</apiDocsUrl>  
           <outputFileName>openapi.json</outputFileName>  
           <outputDir>${project.build.directory}</outputDir> 
@@ -107,20 +107,20 @@
         <configuration> 
           <schemaVersion>v2</schemaVersion>  
           <resourceGroup>SocialNetwork-resource</resourceGroup>  
-          <appName>SocialNetworkNTF1</appName>  
-          <pricingTier>D1</pricingTier>
+          <appName>SocialNetworkV1</appName>  
+          <pricingTier>S1</pricingTier>  
           <region>southeastasia</region>  
           <runtime> 
             <os>Windows</os>  
             <javaVersion>Java 11</javaVersion>  
             <webContainer>Java SE</webContainer> 
           </runtime>  
-          <!--          <appSettings>-->
-          <!--            <property>-->
-          <!--              <name>JAVA_OPTS</name>-->
-          <!--              <value>-Dserver.port=80</value>-->
-          <!--            </property>-->
-          <!--          </appSettings>-->
+          <!--          <appSettings>-->  
+          <!--            <property>-->  
+          <!--              <name>JAVA_OPTS</name>-->  
+          <!--              <value>-Dserver.port=80</value>-->  
+          <!--            </property>-->  
+          <!--          </appSettings>-->  
           <deployment> 
             <resources> 
               <resource> 
