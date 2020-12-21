@@ -5,14 +5,14 @@
   <parent> 
     <groupId>org.springframework.boot</groupId>  
     <artifactId>spring-boot-starter-parent</artifactId>  
-    <version>2.4.0</version>
+    <version>2.4.0</version>  
     <relativePath/>  
     <!-- lookup parent from repository --> 
   </parent>  
   <groupId>com.example</groupId>  
   <artifactId>demo</artifactId>  
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <version>0.0.1-SNAPSHOT</version>  
+  <packaging>jar</packaging>  
   <name>demo</name>  
   <description>Demo project for Spring Boot</description>  
   <properties> 
@@ -75,8 +75,8 @@
       <resource> 
         <directory>src/main/java</directory>  
         <includes> 
-          <include>**/*.xml</include>
-          <include>*.xml</include>
+          <include>**/*.xml</include>  
+          <include>*.xml</include> 
         </includes> 
       </resource> 
     </resources>  
@@ -111,7 +111,7 @@
           <schemaVersion>v2</schemaVersion>  
           <resourceGroup>SocialNetwork-resource</resourceGroup>  
           <appName>SocialNetworkV1</appName>  
-          <pricingTier>S1</pricingTier>
+          <pricingTier>S1</pricingTier>  
           <region>southeastasia</region>  
           <runtime> 
             <os>Windows</os>  
