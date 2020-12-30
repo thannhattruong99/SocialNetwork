@@ -111,7 +111,7 @@
           <schemaVersion>v2</schemaVersion>  
           <resourceGroup>SocialNetwork-resource</resourceGroup>  
           <appName>SocialNetworkV1</appName>  
-          <pricingTier>S1</pricingTier>  
+          <pricingTier>B1</pricingTier>  
           <region>southeastasia</region>  
           <runtime> 
             <os>Linux</os>  
