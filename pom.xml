@@ -16,7 +16,7 @@
   <name>demo</name>  
   <description>Demo project for Spring Boot</description>  
   <properties> 
-    <java.version>11</java.version> 
+    <java.version>11</java.version>
   </properties>  
   <dependencies> 
     <dependency> 
@@ -71,13 +71,14 @@
   </dependencies>  
   <build> 
     <finalName>app</finalName>  
-    <resources> 
-      <resource> 
+    <resources>
+      <resource>
         <directory>src/main/java</directory>
-        <includes>
-          <include>*.xml</include>
-          <include>**/*.xml</include>
-        </includes>
+        <filtering>false</filtering>
+      </resource>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>false</filtering>
       </resource>
     </resources>  
     <plugins> 
@@ -124,6 +125,6 @@
 <!--          </deployment> -->
 <!--        </configuration> -->
 <!--      </plugin> -->
-    </plugins> 
+    </plugins>
   </build> 
 </project>
